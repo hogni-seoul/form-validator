@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="form-section">
+        <form name="user-info" id="form" class="form">
+          <div class="title">
+            <small>Bockstar Games Launcher</small>
+            <h2>계정 생성</h2>
+          </div>
+          <hr />
+          <div class="form-control">
+            <input type="text" id="email" placeholder="이메일" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="email2" placeholder="이메일 재입력" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" placeholder="비밀번호" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              id="password2"
+              placeholder="비밀번호 재입력"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="nickname" placeholder="닉네임" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="birth-date">생년월일</label>
+            <input
+              type="date"
+              id="birth-date"
+              value="2020-01-01"
+              min="1920-01-01"
+              max="2020-12-31"
+            />
+          </div>
+          <div class="form-control">
+            <label for="country">국가/지역</label>
+            <select id="country">
+              <option value="Korea, Republic of">대한민국</option>
+              <option value="United Kingdom">영국</option>
+              <option value="United States">미국</option>
+            </select>
+          </div>
+        </form>
+        <div class="button-control">
+          <a href="#" class="btn-back">뒤로</a>
+          <button type="submit" form="form">다음</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
